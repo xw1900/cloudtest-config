@@ -4,8 +4,10 @@ spring:
     - dev
 ---
 
+server: 
+  port: 8001 
+
 spring:
-   port: 8001
    profiles: dev
    application:
     name: cloudtest-dept 
@@ -44,8 +46,10 @@ info:
   
 ---
 
+server: 
+  port: 8002
+  
 spring:
-   port: 8002
    profiles: test
    application:
     name: cloudtest-dept 
