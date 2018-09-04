@@ -5,6 +5,9 @@ spring:
    profiles: dev
    application:
     name: cloudtest-dept 
+   cloud:
+    config:
+      allow-override: true #覆盖任何本地属性 
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -36,3 +39,5 @@ info:
   company.name: www.cloudtest.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
+
+  
